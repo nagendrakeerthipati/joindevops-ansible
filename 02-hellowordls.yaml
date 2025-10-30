@@ -4,4 +4,4 @@
   tasks:
     - name: print the message
       ansible.builtin.debug:
-      msg: "i had completed ansible "
+        msg: "i had completed ansible"
