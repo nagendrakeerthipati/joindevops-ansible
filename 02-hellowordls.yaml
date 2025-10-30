@@ -1,5 +1,7 @@
 - name: print the hello world
   hosts: local
   connection: local # if we connection means no need to use username and password at the time of excution
-  ansible.builtin.debug:
-    msg: "i had completed ansible "
+  tasks:
+    - name: print the message
+      ansible.builtin.debug:
+      msg: "i had completed ansible "
