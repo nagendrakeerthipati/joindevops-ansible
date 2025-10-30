@@ -1,5 +1,5 @@
 - name: print the hello world
-  hosts: local
+  hosts: localhost
   connection: local # if we connection means no need to use username and password at the time of excution
   tasks:
     - name: print the message
