@@ -1,0 +1,10 @@
+- name: multiple play in one playbook
+  hosts: local
+  tasks:
+    - name: play 1 and task 1
+      ansible.builtin.debug:
+        msg: "print play 1 and task 1"
+
+    - name: play 1 and task 2
+      ansible.builtin.debug:
+        msg: "play 1 and task2"
