@@ -1,5 +1,6 @@
 - name: multiple play in one playbook
   hosts: localhost
+  connection: local
   tasks:
     - name: play 1 and task 1
       ansible.builtin.debug:
