@@ -5,13 +5,13 @@
     - name: ping the Server
       ansible.builtin.ping:
 
-    - name: installing nginx
-      ansible.builtin.package:
-        name: nginx
-        state: present
+  #  ### - name: installing nginx
+  #   ###  ansible.builtin.package:
+  #    ###   name: nginx
+  #       state: present
 
-    - name: enabling nginx
-      ansible.builtin.service:
-        name: nginx
-        state: started
-        enabled: true
+  #   - name: enabling nginx
+  #     ansible.builtin.service:
+  #       name: nginx
+  #       state: started
+  #       enabled: true
