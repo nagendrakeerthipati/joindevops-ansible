@@ -1,0 +1,8 @@
+- name: practice yaml file
+  hosts: local
+  become: true
+  tasks: 
+    - name: display msg
+      ansible.builtin.debug:
+        msg: "hello ansible"
+        
