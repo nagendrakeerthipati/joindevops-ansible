@@ -1,0 +1,19 @@
+upstream backend {
+
+{% for server in backend_servers %}
+server {{ server }};
+{% endfor %}
+
+}
+
+server {
+
+listen {{ port }};
+
+server_name {{ server_name }};
+
+location / {
+proxy_pass http://backend;
+}
+
+}
