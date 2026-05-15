@@ -1,0 +1,11 @@
+Original Name: {{ username }}
+
+Uppercase: {{ username | upper }}
+
+Lowercase: {{ username | lower }}
+
+Tools Count: {{ tools | length }}
+
+Joined Tools: {{ tools | join(', ') }}
+
+Environment: {{ env | default('dev') }}

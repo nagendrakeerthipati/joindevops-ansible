@@ -1,0 +1,15 @@
+- hosts: local
+  gather_facts: false
+
+  vars:
+    username: Nagendra
+    tools:
+      - docker
+      - kubernetes
+      - ansible
+
+  tasks:
+    - name: create filter file
+      template:
+        src: filter.j2
+        dest: /tmp/filter.txt
