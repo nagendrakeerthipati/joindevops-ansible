@@ -2,7 +2,7 @@
   gather_facts: false
 
   vars:
-    name: Nagendra
+    username: Nagendra
 
   tasks:
     - name: create file using template
