@@ -1,0 +1,11 @@
+- name: loops for ansible
+  hosts: local
+  become: true
+  tasks: 
+    - name: loops practice
+      ansible.builtin.debug:
+        msg: "hello, {{ item }}"
+      loop:
+      - Nagendra
+      - umesh
+      - Devops
