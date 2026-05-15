@@ -1,0 +1,14 @@
+- hosts: local
+  gather_facts: false
+
+  vars:
+    packages:
+      - nginx
+      - git
+      - docker
+
+  tasks:
+    - name: create loop file
+      template:
+        src: loop.j2
+        dest: /tmp/loop.txt
